@@ -66,11 +66,31 @@ p {
     line-height: 1.4;
 }
 
+/* Global Style Classes */
+.flex-container{
+    display: flex;
+}
+
+.horizontal{
+    flex-direction: row;
+}
+
+.vertical{
+    flex-direction: column;
+}
+
+/* Wrapper Styles */
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
+/* Navigation Styles */
+nav{
+    padding: 20px 0;
+}
+
+/* Content Styles */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -126,6 +146,7 @@ p {
     padding-right: 0;
 }
 
+/* Footer Styles */
 footer {
     width: 100%;
     background: black;
