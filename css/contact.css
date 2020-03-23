@@ -20,3 +20,7 @@
 .form-section{
     justify-content: space-around;
 }
+
+.submit-section{
+    justify-content: flex-end;
+}
