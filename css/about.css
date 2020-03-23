@@ -1,14 +1,30 @@
 /* About Page Styles */
 .top-content .about-text-container{
     width: 94%;
+    margin-bottom: 15px;
 }
 
 /* Container Styles */
+.about-middle-content{
+    flex-wrap: wrap;
+}
+
+.about-middle-content div{
+    border-bottom: 1px dotted black;
+    margin: 20px;
+    width: 45%;
+}
+
+.about-middle-content div img{
+    margin-bottom: 15px;
+}
 
 .call-to-action{
     border: 1px solid black;
     border-radius: 10px;
     background: none;
+    cursor: pointer;
     height: 35px;
+    margin: 15px 0;
     width: 125px;
 }
