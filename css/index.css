@@ -86,40 +86,50 @@ p {
 }
 
 /* Navigation Styles */
-nav{
+nav.flex-container{
     height: 70px;
     justify-content: space-between;
     margin: 20px 0 10px 0;
 }
 
-header.page-header > img{
-    margin: 0 0 15px 0;
+nav.flex-container div:nth-of-type(2){
+    width: 75%;
 }
 
-nav a{
+nav.flex-container a{
     color: #000000;
     cursor: pointer;
+    display: inline-block;
     font-weight: 600;
     line-height: 4em;
+    width: 105px;
+    text-align: center;
     text-decoration: none;
     position: relative;
     z-index: 1;
 }
 
-nav a::before{
+nav.flex-container a::before{
     content: '';
     display: block;
+    height: 0;
+    width: 0;
+    transition: color .5s ease-in-out, height .5s ease-in-out, width .5s ease-in-out;
+}
+
+nav.flex-container a:hover::before{
     height: 100%;
     width: 100%;
-    background-color: green;
+    background-color: rgb(106, 114, 106);
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     z-index: -1;
 }
 
-nav a:hover{
-    color: cadetblue;
+/* Header Image Styles */
+header.page-header > img{
+    margin: 0 0 15px 0;
 }
 
 /* Content Styles */
