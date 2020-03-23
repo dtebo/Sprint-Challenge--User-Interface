@@ -87,7 +87,20 @@ p {
 
 /* Navigation Styles */
 nav{
-    padding: 20px 0;
+    height: 70px;
+    justify-content: space-between;
+    margin: 20px 0 10px 0;
+}
+
+nav div > img{
+    margin: 0 0 10px 0;
+}
+
+nav a{
+    color: #000000;
+    cursor: pointer;
+    line-height: 4em;
+    text-decoration: none;
 }
 
 /* Content Styles */
